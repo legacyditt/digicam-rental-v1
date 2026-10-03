@@ -170,6 +170,101 @@ a {
   transform: rotate(4deg);
 }
 
+/* Digicam Section */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: clamp(44px, 6vw, 82px);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  margin: 10px 0 0;
+}
+
+.section-desc {
+  max-width: 420px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #151515;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 17px 8px 9px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+
+.card:hover {
+  transform: translateY(-5px) rotate(-0.4deg);
+  box-shadow: 8px 10px 0 #151515;
+}
+
+.card:nth-child(2) {
+  transform: rotate(1.2deg);
+}
+.card:nth-child(2):hover {
+  transform: translateY(-5px) rotate(1.2deg);
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "DM Mono", monospace;
+  white-space: nowrap;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 8px;
+  background: #d8ff3e;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "DM Mono", monospace;
+}
+
 /* Shared */
 
 body {
@@ -177,6 +272,11 @@ body {
   background-color: rgb(244, 240, 231);
   color: #151515;
   font-family: "Space Grotesk", sans-serif;
+}
+
+section {
+  padding: 100px 5vw;
+  border-top: 1px solid #151515;
 }
 
 button {
