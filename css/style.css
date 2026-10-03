@@ -8,14 +8,13 @@
   font-weight: 800;
   font-size: 25px;
   letter-spacing: -0.06em;
-  
 }
 
 .logo span {
-    display: inline-block;
-    background-color:#d8ff3e;
-    padding: 2px 7px;
-    transform: rotate(-2deg);
+  display: inline-block;
+  background-color: #d8ff3e;
+  padding: 2px 7px;
+  transform: rotate(-2deg);
 }
 
 .navbar {
@@ -48,7 +47,130 @@ a {
   text-underline-offset: 5px;
 }
 
-/* Body(section) */
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+  align-items: center;
+  min-height: calc(100vh - 76px);
+  padding: 6vw 5vw 5vw;
+  overflow: hidden;
+}
+
+/* Left Content */
+.kicker {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(64px, 8vw, 130px);
+  line-height: 0.85;
+  letter-spacing: -0.08em;
+  margin: 0 0 30px 0;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: #315cff;
+}
+
+.left-content p {
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 520px;
+  color: #45423c;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.location {
+  margin-top: 28px;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Right Content */
+.right-content {
+  position: relative;
+  min-height: 550px;
+}
+
+.camera {
+  position: absolute;
+  width: 70%;
+  right: 3%;
+  top: 10%;
+  transform: rotate(5deg);
+  filter: drop-shadow(15px 25px 0 rgba(21, 21, 21, 0.08));
+  border: 1px solid #999;
+}
+
+.tape {
+  position: absolute;
+  left: 6%;
+  bottom: 3%;
+  width: 52%;
+  background: #ffffff;
+  padding: 8px;
+  transform: rotate(-6deg);
+  box-shadow: 8px 10px 0 rgba(21, 21, 21, 0.12);
+  z-index: 2;
+}
+
+.tape img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.sticker {
+  position: absolute;
+  padding: 12px 15px;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  z-index: 3;
+  box-shadow: 4px 5px 0 #151515;
+}
+
+.s1 {
+  background: #d8ff3e;
+  left: 0;
+  top: 8%;
+  transform: rotate(-8deg);
+}
+
+.s2 {
+  background: #ffffff;
+  right: 0;
+  bottom: 15%;
+  transform: rotate(5deg);
+}
+
+.date {
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  transform: rotate(4deg);
+}
+
+/* Shared */
 
 body {
   margin: 0;
@@ -56,8 +178,6 @@ body {
   color: #151515;
   font-family: "Space Grotesk", sans-serif;
 }
-
-/* Shared */
 
 button {
   font-family: inherit;
@@ -74,8 +194,8 @@ button {
 }
 
 .primary:hover {
-    transform: translateY(-2px);
-    transition: transform 0.2s;
+  transform: translateY(-2px);
+  transition: transform 0.2s;
 }
 
 .secondary {
