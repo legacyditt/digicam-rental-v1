@@ -267,17 +267,17 @@ a {
 }
 
 .manifesto span {
-    color:#d8ff3e;
+  color: #d8ff3e;
 }
 
 .why .section-desc {
-    color: #bcb8af;
+  color: #bcb8af;
 }
 
 /* Section 4 (Gallery) */
 .gallery {
   display: grid;
-  grid-template-columns: 1.1fr .8fr .8fr;
+  grid-template-columns: 1.1fr 0.8fr 0.8fr;
   grid-template-rows: 220px 220px;
   gap: 12px;
 }
@@ -287,7 +287,6 @@ a {
   height: 100%;
   object-fit: cover;
   border: 1px solid #151515;
-
 }
 
 .g1 {
@@ -295,13 +294,48 @@ a {
 }
 
 .g3 {
-  transform:rotate(1deg);
+  transform: rotate(1deg);
 }
 
 .g4 {
-  transform:rotate(-1deg);
+  transform: rotate(-1deg);
 }
 
+/* Section 4 (Process) */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #151515;
+  border-left: 1px solid #151515;
+}
+
+.step {
+  min-height: 240px;
+  padding: 25px;
+  border-right: 1px solid #151515;
+  border-bottom: 1px solid #151515;
+}
+
+.step h3 {
+  font-size: 25px;
+  letter-spacing: -0.04em;
+  
+}
+
+.step p{
+  color: #5e5b54;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.num {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "DM Mono", monospace;
+  background: #d8ff3e;
+  padding: 5px 8px;
+  display: inline-block;
+}
 
 /* Shared */
 body {
