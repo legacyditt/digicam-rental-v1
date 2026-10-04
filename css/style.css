@@ -337,6 +337,35 @@ a {
   display: inline-block;
 }
 
+/* Section 6 (Information) */
+.info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.info-card {
+  border: 1px solid #151515;
+  padding: 24px;
+  min-height: 170px;
+}
+
+.info-card .icon {
+  font-size: 30px;
+}
+
+.info-card h3 {
+  margin: 25px 0 7px;
+  font-size: 20px;
+}
+
+.info-card p {
+  margin: 0;
+  color: #666;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
 /* Shared */
 body {
   margin: 0;
