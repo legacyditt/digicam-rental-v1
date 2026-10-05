@@ -385,5 +385,73 @@
         </div>
       </div>
     </footer>
+
+    <dialog id="booking-modal" class="modal">
+      <div class="modal-box">
+        <button type="button" id="close-modal" class="btn-close">✕</button>
+
+        <div class="modal-header">
+          <div class="eyebrow">Form Booking</div>
+          <h2 class="modal-title">Booking Digicam</h2>
+        </div>
+
+        <form id="booking-form">
+          <div class="form-group">
+            <label for="camera-name">Kamera Pilihan</label>
+            <input type="text" id="camera-name" readonly />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="start-date">Mulai Sewa</label>
+              <input type="date" id="start-date" required />
+            </div>
+            <div class="form-group">
+              <label for="end-date">Selesai Sewa</label>
+              <input type="date" id="end-date" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="customer-name">Nama Lengkap</label>
+            <input
+              type="text"
+              id="customer-name"
+              placeholder="john doe"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="customer-phone">Nomor WhatsApp</label>
+            <input
+              type="tel"
+              id="customer-phone"
+              placeholder="08xxxxxxxxxx"
+              required
+            />
+          </div>
+
+          <div class="price-breakdown">
+            <div class="price-row">
+              <span>Durasi Sewa:</span>
+              <strong id="booking-days">0 Hari</strong>
+            </div>
+            <div class="price-row">
+              <span>Total Biaya:</span>
+              <strong id="total-price">Rp 0</strong>
+            </div>
+            <div class="price-row">
+              <span>Estimasi dp(40%):</span>
+              <strong id="dp-price">Rp 0</strong>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit-form">Pesan Sekarang via WhatsApp ↗</button>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
