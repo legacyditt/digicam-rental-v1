@@ -216,6 +216,13 @@ a {
   gap: 10px;
 }
 
+.card-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
 .card h3 {
   margin: 0;
   font-size: 22px;
@@ -243,12 +250,30 @@ a {
 
 .tag {
   display: inline-block;
-  margin-top: 15px;
-  padding: 5px 8px;
+  padding: 6px 10px;
   background: #d8ff3e;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "DM Mono", monospace;
+  line-height: 1;
+}
+
+.btn-card-sewa {
+  background: #151515;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+  line-height: 1;
+}
+
+.btn-card-sewa:hover {
+  background: #d8ff3e;
+  color: #151515;
 }
 
 /* Section 3 (WHY) */
