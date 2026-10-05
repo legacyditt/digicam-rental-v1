@@ -366,6 +366,34 @@ a {
   font-size: 14px;
 }
 
+/* Section 7 (FAQ) */
+.faq {
+  max-width: 850px;
+  margin: auto;
+}
+
+.faq details {
+  border-top: 1px solid #151515;
+  padding: 20px;
+}
+
+.faq details:last-child {
+  border-bottom: 1px solid #151515;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.faq p {
+  color: #666;
+  line-height: 1.2;
+  max-width: 680px;
+  margin: 14px 0 0;
+}
+
 /* Shared */
 body {
   margin: 0;
