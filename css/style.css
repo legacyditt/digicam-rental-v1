@@ -414,6 +414,37 @@ a {
   margin-bottom: 40px;
 }
 
+/* Footer */
+footer {
+  padding: 35px 5vw;
+  background:#151515;
+  color: #f4f0e7;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  gap: 30px;
+}
+
+footer > div, .footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .tagline{
+  color: #888;
+}
+
+.footer-location {
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.05em;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 /* Shared */
 body {
   margin: 0;
